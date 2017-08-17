@@ -1,0 +1,24 @@
+{
+  "name": "react-app-electron",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "foreman": "^2.0.0",
+    "react-scripts": "1.0.7"
+  },
+  "main": "src/electron-starter.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "electron-packager . verified --platform=darwin --arch=x64 -version=1.0.0 --overwrite",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev" : "nf start -p 3000"
+  }
+}
